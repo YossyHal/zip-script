@@ -1,0 +1,26 @@
+{
+    // general
+    "editor.fontFamily": "BIZ UDゴシック",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    // Python
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "files.exclude": { // ファイルブラウザに表示しない
+        ".venv": true,
+        ".gitattributes": true,
+        "**/.git": true,
+        "**/__pycache__": true,
+    },
+}
